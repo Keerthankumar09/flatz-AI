@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Feed • FlatZ AI</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+  <header class="topbar solid">
+    <div class="brand">FlatZ <span>AI</span></div>
+    <nav class="actions">
+      <span class="hello">Hi, {{ name }}</span>
+      <a href="/logout" class="chip danger">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Shop Our Picks</h2>
+
+    <div id="feed-grid" class="card-grid">
+      <!-- Cards injected by JS -->
+    </div>
+
+    <div class="center">
+      <button id="load-more" class="btn ghost">Load more posts</button>
+    </div>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

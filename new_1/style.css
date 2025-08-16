@@ -1,0 +1,46 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* light gray background */
+}
+
+/* Center content in forms */
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Navbar customization */
+.navbar {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Card customization for recommendations */
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Form input spacing */
+input {
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 6px;
+}
+
+/* Responsive spacing for mobile */
+@media (max-width: 576px) {
+  .container {
+    padding: 15px;
+  }
+}

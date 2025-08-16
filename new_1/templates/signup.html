@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up • FlatZ AI</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="auth-bg">
+  <header class="topbar">
+    <div class="brand">FlatZ <span>AI</span></div>
+    <nav class="actions">
+      <a href="/login" class="chip">Sign In</a>
+    </nav>
+  </header>
+
+  <main class="auth-wrap">
+    <section class="auth-card">
+      <p class="muted center">Have an account? <a href="/login">Login</a></p>
+      <h1 class="center">Sign Up</h1>
+
+      {% if error %}
+        <div class="alert">{{ error }}</div>
+      {% endif %}
+
+      <form class="form" action="/signup" method="post">
+        <div class="row two">
+          <input type="text" name="first_name" placeholder="Firstname"/>
+          <input type="text" name="last_name" placeholder="Lastname"/>
+        </div>
+        <div class="row">
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="row">
+          <input type="password" name="password" placeholder="Password" required />
+        </div>
+        <button class="btn primary block">Register</button>
+        <div class="form-foot">
+          <label class="check"><input type="checkbox"/> Remember Me</label>
+          <a href="#" class="muted">Terms &amp; conditions</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
